@@ -12,7 +12,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center space-x-2">
             <Play className="h-8 w-8 text-primary" />
-            <span className="text-xl font-bold gradient-text">StreamHub</span>
+            <span className="text-xl font-bold gradient-text">StreamFEX</span>
           </div>
           
           <nav className="hidden md:flex items-center space-x-8">
@@ -28,11 +28,15 @@ const Header = () => {
           </nav>
 
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="outline" size="sm">
-              Iniciar Sesión
+            <Button 
+              variant="outline" 
+              size="sm"
+              onClick={() => window.open('https://wa.me/51994516143?text=Hola! Quiero información sobre los servicios', '_blank')}
+            >
+              WhatsApp
             </Button>
             <Button size="sm" className="bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-700 hover:to-blue-700">
-              Comenzar
+              Contratar
             </Button>
           </div>
 
@@ -58,11 +62,15 @@ const Header = () => {
               Contacto
             </a>
             <div className="flex flex-col space-y-2 pt-4">
-              <Button variant="outline" size="sm">
-                Iniciar Sesión
+              <Button 
+                variant="outline" 
+                size="sm"
+                onClick={() => window.open('https://wa.me/51994516143?text=Hola! Quiero información sobre los servicios', '_blank')}
+              >
+                WhatsApp
               </Button>
               <Button size="sm" className="bg-gradient-to-r from-purple-600 to-blue-600">
-                Comenzar
+                Contratar
               </Button>
             </div>
           </nav>
